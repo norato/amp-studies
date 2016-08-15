@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>AmpStudies</title>
-    <link rel="canonical" href="<%= request.original_url %>">
+    <link rel="canonical" href="<%= url_for(format: :html, only_path: false) %>" >
+    <link rel="amphtml" href="<%= url_for(format: :amp, only_path: false) %>" >
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <%= csrf_meta_tags %>
     <style amp-custom>
